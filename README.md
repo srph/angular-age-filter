@@ -13,18 +13,18 @@ Should work with AngularJS ```>=1.2.0```.
 
 **```angular-age-filter``` is available via [Bower]**
 
-```js
+```bash
 $ bower install angular-srph-age-filter
 ```
 
-**Include the script in your HTML file**
+**Include the script to your HTML file**
 
 ```html
 <!-- other scripts -->
 <script src="/path/to/angular-age-filter.js"></script>
 ```
 
-**Add the module in your module's dependencies.**
+**Add the ```srph.age-filter``` module in your module's dependencies.**
 
 ```js
 angular.module('myApp', ['srph.age-filter']);
@@ -32,14 +32,14 @@ angular.module('myApp', ['srph.age-filter']);
 
 ### Usage
 
-Templates
+**Templates**
 
 ```html
 {{ '11/23/1996' | age }}
 {{ 848678400000 | age }}
 ```
 
-Controller, directives, etc..
+**Controller, directives, etc..**
 
 ```js
 app.controller('YoloController', function($scope, $filter) {
@@ -48,7 +48,7 @@ app.controller('YoloController', function($scope, $filter) {
 })
 ```
 
-Our filter also accepts a second parameter, testing the birthdate against a given time, such as:
+**It also accepts a second parameter, testing the birthdate against a given time, such as:**
 
 ```html
 {{ '11/23/1996' | age: '11/23/2001' }}
@@ -58,7 +58,7 @@ Outputs: ```5```
 
 ## Acknowlegement
 
-This isn't my work. You might want to check the [SO Answer](http://stackoverflow.com/questions/24883308/convert-birthday-to-age-in-angularjs) by [pixelbits](http://stackoverflow.com/users/3661630/pixelbits).
+This isn't entirely my work. You might want to check the [SO Answer](http://stackoverflow.com/questions/24883308/convert-birthday-to-age-in-angularjs) by [pixelbits](http://stackoverflow.com/users/3661630/pixelbits).
 
 **angular-age-filter** © 2014+, Kier Borromeo (srph). Released under the [MIT](http://mit-license.org/) License.<br>
 
