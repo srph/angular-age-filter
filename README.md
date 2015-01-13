@@ -8,7 +8,24 @@ Should work with AngularJS ```>=1.2.0```.
 
 ### Installation
 
-...
+**```angular-age-filter``` is available via [Bower]**
+
+```js
+$ bower install angular-srph-age-filter
+```
+
+**Include the script in your HTML file**
+
+```html
+<!-- other scripts -->
+<script src="/path/to/angular-age-filter.js"></script>
+```
+
+**Add the module in your module's dependencies.**
+
+```js
+angular.module('myApp', ['srph.age-filter']);
+```
 
 ### Usage
 
