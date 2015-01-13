@@ -1,5 +1,8 @@
 # angular-age-filter
 
+[![Build Status](https://travis-ci.org/srph/angular-age-filter.svg)](https://travis-ci.org/srph/angular-age-filter)
+[![Author | Shields.io](http://img.shields.io/badge/author-%40srph-blue.svg?style=flat-square)](http://twitter.com/_srph)
+
 An angular filter that converts date to age <del>for lazy people</del>.
 
 ## Getting Started
@@ -45,10 +48,22 @@ app.controller('YoloController', function($scope, $filter) {
 })
 ```
 
+Our filter also accepts a second parameter, testing the birthdate against a given time, such as:
+
+```html
+{{ '11/23/1996' | age: '11/23/2001' }}
+```
+
+Outputs: ```5```
+
 ## Acknowlegement
 
 This isn't my work. You might want to check the [SO Answer](http://stackoverflow.com/questions/24883308/convert-birthday-to-age-in-angularjs) by [pixelbits](http://stackoverflow.com/users/3661630/pixelbits).
 
+**angular-age-filter** © 2014+, Kier Borromeo (srph). Released under the [MIT](http://mit-license.org/) License.<br>
+
 > [srph.github.io](http://srph.github.io) &nbsp;&middot;&nbsp;
 > GitHub [@srph](https://github.com/srph) &nbsp;&middot;&nbsp;
 > Twitter [@_srph](https://twitter.com/_srph)
+
+[MIT]: http://mit-license.org/
