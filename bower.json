@@ -1,6 +1,7 @@
 {
   "name": "angular-srph-age-filter",
   "version": "0.0.1",
+  "description": "An angular filter that converts date to age ",
   "homepage": "https://github.com/srph/angular-age-filter",
   "authors": [
     "srph <seraphipod@gmail.com>"
