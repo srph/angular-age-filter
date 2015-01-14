@@ -11,10 +11,13 @@
 
   function age() {
     return function(input, current) {
-      // Difference in milliseconds
+      // This syntax is usable in this case
+      // NaN || {whatever} evaluates to {whatever}
       current = Date.parse(current) || Date.now();
-      var ageDiff =  current - new Date(input).getTime();
-      var ageDate = new Date(ageDiff);
+      
+      // Difference in milliseconds
+      var ageDiffMs =  current - new Date(input).getTime();
+      var ageDate = new Date(ageDiffMs);
 
       return Math.abs( ageDate.getUTCFullYear() - 1970 );
     }
